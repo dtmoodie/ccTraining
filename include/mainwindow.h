@@ -5,6 +5,8 @@
 #include <QFileDialog>
 #include <QDir>
 #include <QTreeWidgetItem>
+#include <qfile.h>
+#include <qtextstream.h>
 
 namespace Ui {
 class MainWindow;
@@ -25,6 +27,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+	QStringList filters;
 };
 
 #endif // MAINWINDOW_H
